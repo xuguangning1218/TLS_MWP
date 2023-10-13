@@ -1,0 +1,6 @@
+torch
+torchvision
+numpy
+tqdm
+scikit-learn
+configparser
