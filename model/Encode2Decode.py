@@ -1,18 +1,11 @@
-# from model.sa_convLSTM_cell import SA_Convlstm_cell
 from model.tls_convLSTM_cell import TLS_Convlstm_cell, FrontTensorProduct
 
 import torch
 import torch.nn as nn
 import random
 
-###
-#
-# Author: Min Namgung
-# Contact: namgu007@umn.edu
-#
-# ###
 
-class Encode2Decode(nn.Module):  # self-attention convlstm for spatiotemporal prediction model
+class Encode2Decode(nn.Module):
     def __init__(self, config):
         super(Encode2Decode, self).__init__()
         # hyperparams
