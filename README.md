@@ -27,8 +27,7 @@ pip install -r requirements.txt
 	-- Encode2Decode.py # the frame-by-frame framework
 	-- tls_convLSTM_cell.py # the ConvLSTM with TLS-Conv and the TLS-Conv
 	-- Model.py # model handler of train, validate, test, etc.
-	-- network.py # the LS-NTP
 requirements.txt # requirements package of the project
-setting.config # model configure for ERA5
+setting.config # model configure
 Run.ipynb # jupyter visualized code for the model
 ```
