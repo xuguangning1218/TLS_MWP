@@ -15,6 +15,9 @@ pip install -r requirements.txt
 ###  Source Files Description
 
 ```
+-- data # data loader
+	-- sample_test.npy # sampel of the test dataset
+	-- sample_train_validate.npy # sampel of the train_validate dataset
 -- data_loader # data loader folder
 	-- era5.py # dataloader in train, validate, test for ERA5
 	-- normalizer.py # data normalizer, including std, maxmin
