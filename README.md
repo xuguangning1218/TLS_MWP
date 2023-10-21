@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ###  Source Files Description
 
 ```
--- data # data loader
+-- data # data folder
 	-- sample_test.npy # sampel of the test dataset
 	-- sample_train_validate.npy # sampel of the train_validate dataset
 -- data_loader # data loader folder
