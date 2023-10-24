@@ -1,7 +1,7 @@
 #  TLS-MWP: A Tensor-based Long- and Short-range Convolution for Multiple Weather Prediction
 
 Official source code for paper 《TLS-MWP: A Tensor-based Long- and Short-range Convolution for Multiple Weather Prediction》
-### Overall Architecture of LS-NTP
+### Overall Architecture of TLS-MWP
 ![image](https://github.com/xuguangning1218/TLS_MWP/blob/master/figure/model.png)
 
 ### Environment Installation
