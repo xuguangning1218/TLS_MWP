@@ -14,12 +14,9 @@ import torch.nn.functional as F
 
 
 class FrontTensorProduct(torch.nn.Module):
-    def __init__(self, height=19, width=32, num_relation=4):
+    def __init__(self, num_relation=4):
         super(FrontTensorProduct, self).__init__()
         self.num_relation = num_relation
-        # self.W = nn.Parameter(torch.ones(self.num_relation, 1), requires_grad=True)
-        # n_node = height * width 
-        # self.identity = torch.diag(torch.ones(n_node))
         
     def forward(self, A, B):
         # relation dim in front
