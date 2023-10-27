@@ -98,7 +98,7 @@ class Encode2Decode(nn.Module):
         
          # calculate tensor adj
         relu_adj = torch.relu(self.tproduct(self.TensorNodeEmbeddings, 
-                                            self.TensorNodeEmbeddings.permute(0, 2, 1).contiguous()))
+                                            self.TensorNodeEmbeddings, True))
         adj = torch.softmax(relu_adj, dim=2)
         adj = adj + self.identity
 

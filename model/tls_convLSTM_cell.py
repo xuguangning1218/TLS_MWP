@@ -17,8 +17,11 @@ class FrontTensorProduct(torch.nn.Module):
     def __init__(self, num_relation=4):
         super(FrontTensorProduct, self).__init__()
         self.num_relation = num_relation
+        # self.W = nn.Parameter(torch.ones(self.num_relation, 1), requires_grad=True)
+        # n_node = height * width 
+        # self.identity = torch.diag(torch.ones(n_node))
         
-    def forward(self, A, B):
+    def forward(self, A, B, isBtranspose=False):
         # relation dim in front
         if len(A.shape) == 3: # without batch
             n3, n1, n2 = A.shape
@@ -42,7 +45,10 @@ class FrontTensorProduct(torch.nn.Module):
         for k in range(n3):
             a_slice = torch.squeeze(A_transformed.narrow(A_relation_index,k,1), dim=A_relation_index)
             b_slice = torch.squeeze(B_transformed.narrow(B_relation_index,k,1), dim=B_relation_index)
-            C_transformed.append(torch.matmul(a_slice,b_slice))
+            if isBtranspose == False:
+                C_transformed.append(torch.matmul(a_slice,b_slice))
+            else:
+                C_transformed.append(torch.matmul(a_slice,b_slice.H))
         C = torch.fft.ifft(input = torch.stack(C_transformed, dim=C_relation_index), dim=C_relation_index)
         return torch.real(C)
 
