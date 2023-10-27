@@ -130,7 +130,7 @@ class TensorGraphSpatial2DConvolution(nn.Module):
         self.num_relation = num_relation
         
         # Tensor Product
-        self.tproduct = FrontTensorProduct(height=img_size[0], width=img_size[1], num_relation=num_relation)
+        self.tproduct = FrontTensorProduct(num_relation=num_relation)
         
         self.weight = nn.Parameter(torch.Tensor(self.out_channels, 
                                                 self.in_channels,

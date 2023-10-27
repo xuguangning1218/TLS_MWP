@@ -25,7 +25,7 @@ class Encode2Decode(nn.Module):
         width = self.img_size[1]
         n_node = height * width
         n_relation = self.input_dim
-        self.tproduct = FrontTensorProduct(height=height, width=width, num_relation=n_relation)
+        self.tproduct = FrontTensorProduct(num_relation=n_relation)
         
         # tensor node embeddings
         self.TensorNodeEmbeddings = nn.Parameter(torch.zeros(n_relation, n_node, self.node_embed_dim))
