@@ -8,9 +8,9 @@ Official source code for paper 《TLS-MWP: A Tensor-based Long- and Short-range 
 ```
 pip install -r requirements.txt
 ```  
-### Data Preparation 
-* Download the required Pressure-Level ERA5 (1000 hpa Relative Humidity) dataset through [here](<https://cds.climate.copernicus.eu/cdsapp/#!/dataset/reanalysis-era5-pressure-levels?tab=overview>  "here") and the required Single-Level ERA5 (2m Temperature, Surface Pressure, 10m Wind Speed) dataset through [here](<https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview> "here"). 
-
+### Reproducibility 
+* Download the required Pressure-Level ERA5 (1000 hpa Relative Humidity) dataset through the official site in [here](<https://cds.climate.copernicus.eu/cdsapp/#!/dataset/reanalysis-era5-pressure-levels?tab=overview>  "here") and the required Single-Level ERA5 (2m Temperature, Surface Pressure, 10m Wind Speed) dataset through the official site in [here](<https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview> "here"). 
+* Or using the well-prepare data and save model in [here](<https://pan.baidu.com/s/1usug30aMdp0_RMoKbJaEWw?pwd=wn99>)
 
 ###  Source Files Description
 
