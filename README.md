@@ -38,6 +38,9 @@ If you think our work is helpful. Please kindly cite
 @article{XU2022121,
 title = {TLS-MWP: A Tensor-based Long- and Short-range Convolution for Multiple Weather Prediction},
 journal = {IEEE Transactions on Circuits and Systems for Video Technology},
-author = {Guangning Xu, Michael K. Ng, Yunming Ye, Xutao Li, Ge Song, Bowen Zhang, Zhichao Huang}
+author = {Guangning Xu, Michael K. Ng, Yunming Ye, Xutao Li, Ge Song, Bowen Zhang, Zhichao Huang},
+volume = {34},
+number = {9},
+pages = {8382-8397},
 }
 ```
